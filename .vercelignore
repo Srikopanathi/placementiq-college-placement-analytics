@@ -1,0 +1,11 @@
+app.py
+pages/
+src/
+models/
+data/
+database/
+tests/
+requirements.txt
+run_audit.py
+PROJECT_METRICS.md
+*.py
