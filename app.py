@@ -44,3 +44,17 @@ render_sidebar_footer()
 
 # Run current selected independent page
 pg.run()
+
+# ----------------------------------------------------
+# VERCEL DEPLOYMENT COMPATIBILITY
+# ----------------------------------------------------
+def handler(request=None, response=None):
+    return {
+        "statusCode": 200,
+        "headers": {"Content-Type": "text/html"},
+        "body": "<h1>PlacementIQ Analytics</h1><p>Running Streamlit Engine</p>"
+    }
+
+app = handler
+application = handler
+
